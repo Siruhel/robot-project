@@ -15,25 +15,22 @@ maxMotorVelocity = 9.53
 distanceSensorCalibrationConstant = 180
 
 # Get left and right wheel motors.
-leftMotor = robot.getDevice("left wheel motor")
-rightMotor = robot.getDevice("right wheel motor")
+leftMotor = robot.getDevice("motor.left")
+rightMotor = robot.getDevice("motor.right")
 
 # Get frontal distance sensors.
-leftSensor = robot.getDevice("ds1")
-outerLeftSensor = robot.getDevice("ds2")
-centralLeftSensor = robot.getDevice("ds3")
-centralRightSensor = robot.getDevice("ds4")
-outerRightSensor = robot.getDevice("ds5")
-rightSensor = robot.getDevice("ds6")
+outerLeftSensor = robot.getDevice("prox.horizontal.0")
+centralLeftSensor = robot.getDevice("prox.horizontal.1")
+centralSensor = robot.getDevice("prox.horizontal.2")
+centralRightSensor = robot.getDevice("prox.horizontal.3")
+outerRightSensor = robot.getDevice("prox.horizontal.4")
 
 # Enable distance sensors.
-leftSensor.enable(timestep)
 outerLeftSensor.enable(timestep)
 centralLeftSensor.enable(timestep)
+centralSensor.enable(timestep)
 centralRightSensor.enable(timestep)
 outerRightSensor.enable(timestep)
-rightSensor.enable(timestep)
-
 
 # Disable motor PID control mode.
 leftMotor.setPosition(float('inf'))
@@ -42,25 +39,13 @@ rightMotor.setPosition(float('inf'))
 # Set ideal motor velocity.
 initialVelocity =  maxMotorVelocity
 
-def getDistance(sensor):
-    """
-    Return the distance of an obstacle for a sensor.
-
-    The value returned by the getValue() method of the distance sensors
-    corresponds to a physical value (here we have a sonar, so it is the
-    strength of the sonar ray). This function makes a conversion to a
-    distance value in meters.
-    """
-    return (round(sensor.getValue() / 100 * 5, 2) )
-
-
 # Main loop:
 # - perform simulation steps until Webots is stopping the controller
 while robot.step(timestep) != -1:
     leftMotor.setVelocity(initialVelocity)
     rightMotor.setVelocity(initialVelocity)
-    #print("front: " + str(getDistance(centralLeftSensor)))
-    print("side: " + str(getDistance(outerLeftSensor)))
-    #print("side: " + str(getDistance(outerLeftSensor)))
+    print("front: " + str(centralSensor.getValue()))
+    print("side: " + str(outerLeftSensor.getValue()))
+    print("side: " + str(outerRightSensor.getValue()))
 
 # Enter here exit cleanup code.
