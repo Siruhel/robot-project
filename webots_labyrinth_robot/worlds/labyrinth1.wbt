@@ -1,11 +1,11 @@
 #VRML_SIM R2021b utf8
 WorldInfo {
-  basicTimeStep 16
+  basicTimeStep 15
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.3503880742992876 -0.8483307908632283 -0.39694214523303883 1.8713356225555229
-  position -1.7705658591778297 3.034867226466023 -0.4704202017695305
+  orientation 0.9966972525046265 0.07207567874576731 0.03741234265674837 5.179373744049688
+  position 0.22716071620108647 5.227858645565282 2.4826929397753865
 }
 TexturedBackground {
 }
@@ -17,6 +17,11 @@ RectangleArena {
   floorSize 20 20
   floorTileSize 1 1
   wallHeight 0.05
+}
+E-puck {
+  translation 0.944392 -1.25677e-13 0.440102
+  rotation 0 1 0 0.0327233
+  controller "thymio_labyrinth"
 }
 Wall {
   translation -3.01678 0 -1.32224
@@ -31,7 +36,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -3.26983 -1.79412e-13 -0.114404
+  translation -3.26369 -1.79412e-13 -0.114069
   rotation 0 1 0 1.55772
   name "wall(82)"
   size 0.5 0.3 0.1
@@ -43,7 +48,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -3.05199 -1.79412e-13 -0.834579
+  translation -3.05952 -1.79412e-13 -0.824517
   rotation 0 1 0 1.86541e-05
   name "wall(84)"
   size 0.5 0.3 0.1
@@ -115,7 +120,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -3.00877 -1.67866e-13 -0.306174
+  translation -3.00255 -1.67866e-13 -0.310011
   rotation 0 -1 0 -3.1285153071795864
   name "wall(116)"
   size 0.5 0.3 0.1
@@ -199,8 +204,8 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -3.25771 -1.79412e-13 -0.612161
-  rotation 0 1 0 1.55118
+  translation -3.26134 -1.79412e-13 -0.608912
+  rotation 0 1 0 1.56427
   name "wall(99)"
   size 0.5 0.3 0.1
 }
@@ -211,8 +216,8 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -2.76578 -1.54543e-13 0.492646
-  rotation 0 1 0 1.53809
+  translation -2.73706 -1.54543e-13 0.496003
+  rotation 0 1 0 1.55772
   name "wall(101)"
   size 0.5 0.3 0.1
 }
@@ -265,8 +270,8 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation 0.0409372 -3.78364e-13 -1.80976
-  rotation 0 1 0 1.85553e-05
+  translation 0.042211 -3.78364e-13 -1.81317
+  rotation 0 -1 0 0.00652643
   name "wall(113)"
   size 0.5 0.3 0.1
 }
@@ -277,8 +282,8 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -0.940358 -2.49578e-13 -1.8125
-  rotation 0 -1 0 0.00652643
+  translation -0.938086 -2.49578e-13 -1.81468
+  rotation 0 1 0 0.00656354
   name "wall(117)"
   size 0.5 0.3 0.1
 }
@@ -337,14 +342,14 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -2.75222 -1.82077e-13 0.08777
-  rotation 0 1 0 1.55772
+  translation -2.73126 -1.82077e-13 0.206081
+  rotation 0 1 0 1.55118
   name "wall(114)"
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -2.74481 -1.82077e-13 -0.10219
-  rotation 0 1 0 1.55772
+  translation -2.72567 -1.91181e-13 -0.104687
+  rotation 0 1 0 1.55117
   name "wall(73)"
   size 0.5 0.3 0.1
 }
@@ -445,13 +450,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -2.06779 3.55271e-15 1.68372
-  rotation 0 -1 0 0.0196303
-  name "wall(63)"
-  size 0.5 0.3 0.1
-}
-Wall {
-  translation -2.01542 3.55271e-15 1.68741
+  translation -2.02083 3.55271e-15 1.68046
   rotation 0 -1 0 0.0196303
   name "wall(111)"
   size 0.5 0.3 0.1
@@ -505,7 +504,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -1.74294 8.79299e-14 1.89837
+  translation -1.73785 8.79299e-14 1.88487
   rotation 0 1 0 1.55772
   name "wall(72)"
   size 0.5 0.3 0.1
@@ -517,7 +516,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -1.54935 -5.2591e-21 0.699024
+  translation -1.5249 4.44084e-16 0.698112
   rotation 0 -1 0 0.0196296
   name "wall(48)"
   size 0.5 0.3 0.1
@@ -535,7 +534,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -1.24807 3.10862e-14 1.41377
+  translation -1.24562 3.10862e-14 1.40498
   rotation 0 1 0 1.5708
   name "wall(51)"
   size 0.5 0.3 0.1
@@ -583,7 +582,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -0.0487396 2.66453e-15 2.21107
+  translation -0.0450385 -1.39888e-14 2.14433
   rotation 0 1 0 4.692820414042842e-06
   name "wall(35)"
   size 0.5 0.3 0.1
@@ -613,8 +612,8 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation 0.162528 2.66453e-15 2.42323
-  rotation 0 -1 0 1.5708
+  translation 0.150802 3.9968e-15 2.43365
+  rotation 0 -1 0 1.58389
   name "wall(44)"
   size 0.5 0.3 0.1
 }
@@ -631,7 +630,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -1.02772 2.66453e-15 1.20902
+  translation -1.01997 2.66453e-15 1.20734
   rotation 0 1 0 4.692820414042842e-06
   name "wall(37)"
   size 0.5 0.3 0.1
@@ -643,13 +642,13 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -0.308313 4.44089e-15 1.41814
+  translation -0.335442 4.44089e-15 1.41452
   rotation 0 1 0 1.55771
   name "wall(39)"
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -0.309455 -1.06581e-14 1.91668
+  translation -0.339869 -1.06581e-14 1.90833
   rotation 0 1 0 1.57078
   name "wall(40)"
   size 0.5 0.3 0.1
@@ -737,7 +736,7 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -0.747895 8.88178e-16 -0.638466
+  translation -0.747658 2.22044e-16 -0.64146
   rotation 0 -1 0 1.58388
   name "wall(18)"
   size 0.5 0.3 0.1
@@ -749,8 +748,8 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -1.27854 3.55272e-15 -0.0575057
-  rotation 0 -1 0 1.60351
+  translation -1.2736 4.21885e-15 -0.0589785
+  rotation 0 -1 0 1.59697
   name "wall(9)"
   size 0.5 0.3 0.1
 }
@@ -761,20 +760,20 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -0.0826996 -1.33227e-14 0.726948
-  rotation 0 -1 0 0.0261752
+  translation -0.0481752 -1.19904e-14 0.711011
+  rotation 0 -1 0 0.00654023
   name "wall(2)"
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -0.574941 -2.66454e-15 0.716168
-  rotation 0 -1 0 0.0261752
+  translation -0.541783 -7.99361e-15 0.70978
+  rotation 0 -1 0 0.00654022
   name "wall(1)"
   size 0.5 0.3 0.1
 }
 Wall {
-  translation 0.41591 2.66453e-15 0.740413
-  rotation 0 1 0 4.692820414042842e-06
+  translation 1.79728 2.66453e-15 0.876514
+  rotation 0 -1 0 0.0130853
   name "wall(3)"
   size 0.5 0.3 0.1
 }
@@ -785,19 +784,19 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation 0.403191 2.66453e-15 0.73803
-  rotation 0 1 0 4.692820414042842e-06
+  translation 0.430832 6.43929e-15 0.709073
+  rotation 0 1 0 0.00654968
   name "wall(23)"
   size 0.5 0.3 0.1
 }
 Wall {
-  translation 0.403191 2.66453e-15 0.73803
+  translation 1.70826 2.66453e-15 0.480991
   rotation 0 1 0 4.6928e-06
   name "wall(24)"
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -1.06615 0 0.70508
+  translation -1.03311 8.88178e-16 0.70485
   size 0.5 0.3 0.1
 }
 Wall {
@@ -829,8 +828,4 @@ Wall {
   translation 0.437958 0 0.128453
   name "wall(17)"
   size 0.5 0.3 0.1
-}
-Khepera3 {
-  translation 0.958164 8.88178e-16 -0.066079
-  controller "thymio_labyrinth"
 }
