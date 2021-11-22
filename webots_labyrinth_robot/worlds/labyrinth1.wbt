@@ -5,7 +5,7 @@ WorldInfo {
 }
 Viewpoint {
   orientation 0.9966972525046265 0.07207567874576731 0.03741234265674837 5.179373744049688
-  position 0.22716071620108647 5.227858645565282 2.4826929397753865
+  position -1.389784321109522 8.080061869030043 5.348639738150866
 }
 TexturedBackground {
 }
@@ -138,12 +138,6 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation -1.30175 -1.79412e-13 -3.12339
-  rotation 0 1 0 1.53809
-  name "wall(98)"
-  size 0.5 0.3 0.1
-}
-Wall {
   translation -1.99986 -1.94512e-13 -0.921868
   rotation 0 1 0 1.86541e-05
   name "wall(127)"
@@ -153,42 +147,6 @@ Wall {
   translation -1.98432 -2.5313e-13 -1.32384
   rotation 0 1 0 0.00656358
   name "wall(128)"
-  size 0.5 0.3 0.1
-}
-Wall {
-  translation -1.30175 -1.79412e-13 -3.12339
-  rotation 0 1 0 1.53809
-  name "wall(129)"
-  size 0.5 0.3 0.1
-}
-Wall {
-  translation -1.30175 -1.79412e-13 -3.12339
-  rotation 0 1 0 1.53809
-  name "wall(130)"
-  size 0.5 0.3 0.1
-}
-Wall {
-  translation -1.30175 -1.79412e-13 -3.12339
-  rotation 0 1 0 1.53809
-  name "wall(131)"
-  size 0.5 0.3 0.1
-}
-Wall {
-  translation -1.30175 -1.79412e-13 -3.12339
-  rotation 0 1 0 1.53809
-  name "wall(132)"
-  size 0.5 0.3 0.1
-}
-Wall {
-  translation -1.30175 -1.79412e-13 -3.12339
-  rotation 0 1 0 1.53809
-  name "wall(133)"
-  size 0.5 0.3 0.1
-}
-Wall {
-  translation -1.30175 -1.79412e-13 -3.12339
-  rotation 0 1 0 1.53809
-  name "wall(134)"
   size 0.5 0.3 0.1
 }
 Wall {
@@ -678,12 +636,6 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation 2.16953 3.55271e-15 2.0509
-  rotation 0 1 0 4.692820414042842e-06
-  name "wall(26)"
-  size 0.5 0.3 0.1
-}
-Wall {
   translation 1.23969 1.88294e-13 0.925847
   rotation 0 1 0 1.5708
   name "wall(25)"
@@ -772,12 +724,6 @@ Wall {
   size 0.5 0.3 0.1
 }
 Wall {
-  translation 1.79728 2.66453e-15 0.876514
-  rotation 0 -1 0 0.0130853
-  name "wall(3)"
-  size 0.5 0.3 0.1
-}
-Wall {
   translation 1.24168 -7.54953e-14 0.423819
   rotation 0 1 0 1.5708
   name "wall(22)"
@@ -787,12 +733,6 @@ Wall {
   translation 0.430832 6.43929e-15 0.709073
   rotation 0 1 0 0.00654968
   name "wall(23)"
-  size 0.5 0.3 0.1
-}
-Wall {
-  translation 1.70826 2.66453e-15 0.480991
-  rotation 0 1 0 4.6928e-06
-  name "wall(24)"
   size 0.5 0.3 0.1
 }
 Wall {
